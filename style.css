@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Sora", sans-serif;
+}
+
+body {
+  display: flex;
+  background-color: #fafaf9;
+  padding: 10rem 5rem;
+  min-height: 100vh;
+}
+
+.left-side,
+.right-side {
+  width: 50%;
+  padding: 5rem;
+}
+
+.image {
+  display: flex;
+  background-color: #f5c044;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 20px;
+  border-radius: 50px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 25px;
+}
+
+.title h1 {
+  font-size: 2.25rem;
+}
+
+.parap p {
+  font-size: 1.25rem;
+  color: #52525a;
+  margin-top: 20px;
+  line-height: 40px;
+}
+
+.list {
+  margin-top: 30px;
+}
+
+.list ul li {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  align-content: center;
+  font-size: 0.875rem;
+  color: #52525a;
+  margin-top: 10px;
+}
+
+.list ul li img {
+  margin-right: 10px;
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card-1 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 350px;
+  margin-bottom: 20px;
+  height: 200px;
+  margin-left: 30vh;
+  padding: 28px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.card-2 {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+  width: 350px;
+  margin-bottom: 20px;
+  height: 200px;
+  padding: 28px;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 30px 100px 0px rgba(17, 23, 41, 0.05);
+}
+
+.logoogle {
+  display: flex;
+  width: 100px;
+}
+
+.lometa {
+  display: flex;
+  width: 100px;
+}
+
+.logoogle,
+.lometa {
+  margin-right: 10px;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+
+  .left-side {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .right-side {
+    width: 100%;
+    padding: 2rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+}
+
+/* Movil */
+@media (max-width: 767px) {
+  body {
+    padding: 2rem 1rem;
+  }
+
+  .left-side,
+  .right-side {
+    padding: 1rem;
+  }
+  
+  .stars{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  h3{
+    width: 100%;
+  }
+
+  .card-1,
+  .card-2 {
+    width: 100%;
+    margin: 0 auto;
+    max-width: none;
+  }
+
+  .title h1 {
+    font-size: 1.875rem;
+  }
+}
